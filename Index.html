@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayson P. Francisco - IT Student Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        /* Hide mobile menu by default */
+        #mobile-menu {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 smooth-scroll">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl sm:text-2xl font-bold text-gray-900">Jayson P. Francisco</h1>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden sm:flex items-center space-x-4">
+                    <a href="#home" class="text-gray-600 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="sm:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-500 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="sm:hidden bg-white border-t border-gray-200">
+                <div class="flex flex-col space-y-2 px-4 py-4">
+                    <a href="#home" class="text-gray-600 hover:text-blue-500 px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-500 px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-500 px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-500 px-3 py-2 rounded-md text-base font-medium">Skills</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-500 px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-400 to-indigo-500 text-white">
+        <div class="text-center max-w-2xl mx-auto px-4">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">Hi, I'm Jayson P. Francisco</h1>
+            <p class="text-base sm:text-lg md:text-xl mb-6">3rd-Year IT Student | Aspiring Web & Full Stack Developer</p>
+            <a href="#projects" class="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition">Explore My Projects</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
+                <img src="images/Jayson.jpg" alt="Profile" class="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover shadow-md">
+                <div class="text-center md:text-left">
+                    <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+                        I'm a 3rd-year Information Technology student at Negros Oriental State University - Bayawan-Santa Catalina Campus, passionate about web development, backend, and frontend technologies. My studies focus on programming, database management, and building dynamic applications.
+                    </p>
+                    <p class="text-base sm:text-lg text-gray-600 leading-relaxed mt-4">
+                        When I'm not coding, I enjoy exploring new web frameworks, contributing to projects, and learning about full-stack development. My goal is to become a skilled web and full-stack developer, creating impactful and user-friendly applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">My Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale">
+                    <p class="font-semibold text-gray-800">C++</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale">
+                    <p class="font-semibold text-gray-800">Java</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale">
+                    <p class="font-semibold text-gray-800">Python</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale">
+                    <p class="font-semibold text-gray-800">PHP</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale">
+                    <p class="font-semibold text-gray-800">JavaScript</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale">
+                    <p class="font-semibold text-gray-800">HTML & CSS</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale">
+                    <p class="font-semibold text-gray-800">SQL</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale">
+                    <p class="font-semibold text-gray-800">MySQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">My Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-scale">
+                    <img src="https://via.placeholder.com/400x200" alt="NORSU BSC SmartMap" class="w-full h-40 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2">NORSU BSC SmartMap</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-4">A PHP-based web application for room management with QR code login and admin features, built with HTML, CSS, and JavaScript.</p>
+                        <a href="#" class="text-blue-500 font-medium hover:underline">View Project</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-scale">
+                    <img src="https://via.placeholder.com/400x200" alt="Attendance System" class="w-full h-40 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2">Attendance Monitoring System</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-4">A Python-based system with face recognition and QR code scanning for tracking attendance, integrated with SQLite.</p>
+                        <a href="#" class="text-blue-500 font-medium hover:underline">View Project</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover-scale">
+                    <img src="https://via.placeholder.com/400x200" alt="Rock Paper Scissors Game" class="w-full h-40 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2">Rock Paper Scissors Game</h3>
+                        <p class="text-gray-600 text-sm sm:text-base mb-4">A Python Tkinter-based game with a GUI for player vs. computer and local PvP modes.</p>
+                        <a href="#" class="text-blue-500 font-medium hover:underline">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">Get in Touch</h2>
+            <div class="max-w-lg mx-auto text-center">
+                <p class="text-base sm:text-lg text-gray-600 mb-6">
+                    I'm open to internship opportunities, freelance projects, or collaboration on web development initiatives!
+                </p>
+                <div class="space-y-3">
+                    <p><strong>Email:</strong> <a href="mailto:jayson.f.bsinfotech@gmail.com" class="text-blue-500 hover:underline">jayson.f.bsinfotech@gmail.com</a></p>
+                    <p><strong>Facebook:</strong> <a href="https://www.facebook.com/share/1Bwi2uPRUj/" class="text-blue-500 hover:underline">facebook.com/jaysonfrancisco</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/jaysonkeito" class="text-blue-500 hover:underline">github.com/jaysonfrancisco</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Jayson P. Francisco. Built with passion and code.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
